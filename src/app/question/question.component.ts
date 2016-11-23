@@ -1,3 +1,5 @@
+import { Question } from './question.model';
+import { QuestionService } from './question.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuestionComponent implements OnInit {
 
-  constructor() { }
+  questions: Question[]
+  constructor(private service:QuestionService) { }
 
   ngOnInit() {
+    this.service.getQuestions()
+      .subscribe(questions =>  this.questions = questions );
   }
 
 }

@@ -1,5 +1,5 @@
 
-import { Observable } from 'rxjs';
+//import { Observable } from 'rxjs';
 import { QuestionService } from './../question/question.service';
 //import { AngularFire, FirebaseListObservable } from 'angularfire2';
 import { Component, OnInit } from '@angular/core';

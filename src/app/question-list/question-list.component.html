@@ -1,3 +1,23 @@
-<p>
-  question-list works!
-</p>
+<div id="section-wrapper">
+  <p>Section wrapper</p>
+  <section>
+    <ul id="question-list__vertical">
+      <li *ngFor="let question of questions">
+        <article>
+          <p> {{question.title}}</p>
+        </article>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <!--<button class="toggle-sidebar">Toggle sidebar</button> -->
+    <ul id="question-list__horizontal">
+      <li *ngFor="let question of questions">
+        <article>
+          <header> {{question.title}}</header>
+        </article>
+      </li>
+    </ul>
+  </section>
+</div>

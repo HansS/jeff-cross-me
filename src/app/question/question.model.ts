@@ -1,10 +1,5 @@
 export class Question {
-
-  constructor(
-    public $key: string,
-    public number: number,
-    public title: string,
-    public description: string) {
-  }
-
+  number: number;
+  title: string;
+  description: string;
 }
